@@ -1,18 +1,4 @@
 // admin.js
-// ==========================================
-// 1. FIREBASE CONFIG
-// ==========================================
-const firebaseConfig = {
-  apiKey: "AIzaSyDUYEjc1F4L9Stju8l5PPbudoca4bJMi4U",
-  authDomain: "safechat-e5a84.firebaseapp.com",
-  databaseURL: "https://safechat-e5a84-default-rtdb.firebaseio.com",
-  projectId: "safechat-e5a84",
-  storageBucket: "safechat-e5a84.firebasestorage.app",
-  messagingSenderId: "384738679836",
-  appId: "1:384738679836:web:ce66fbad27b880978553d9",
-  measurementId: "G-DTHKFW876F"
-};
-
 firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 const chatsRef = firebase.database().ref("chats");
@@ -202,3 +188,4 @@ exportBtn.onclick = () => {
 };
 
 console.log("✅ Admin JS loaded");
+
